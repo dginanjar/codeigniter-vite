@@ -1,0 +1,6 @@
+# Specify entry point, relative to ROOTPATH
+# e.g. your main.js or app.js or index.js
+VITE_INPUT = 'app/Views/assets/js/app.js'
+
+# Specify the output directory, relative to ROOTPATH
+VITE_OUTDIR = 'public'

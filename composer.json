@@ -1,0 +1,14 @@
+{
+    "name": "dginanjar/codeigniter-vite",
+    "type": "library",
+    "description": "Integrate Vite to CodeIgniter",
+    "keywords": ["codeigniter", "vite"],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Dginanjar\\CodeigniterVite\\": "src/"
+        }
+    }
+}
