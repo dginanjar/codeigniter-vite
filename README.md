@@ -61,8 +61,6 @@ Meanwhile, if we execute `npm run build`, the `manifest.json` file will appear i
 <script type="module" src="http://localhost/assets/js/xxx.js"></script>
 ```
 
-That's it!
-
 ## Configuration
 
 Here is the default `vite.config.js`.
@@ -92,12 +90,12 @@ export default defineConfig(({ mode }) => {
 })
 ```
 
-In most cases, you only need to adjust the `build.outDir` and `build.rollupOptions.input`. Then create `App/Config/Vite.php` and adjust its contents based on the `build.rollupOptions.input`.
+In most cases, you only need to adjust the `build.outDir` and `build.rollupOptions.input`. After that create `App/Config/Vite.php` and adjust its contents based on the `build.rollupOptions.input`.
 
 ```php
 <?php
 
-namespace Dginanjar\CodeIgniterVite\Config;
+namespace App\Config;
 
 use CodeIgniter\Config\BaseConfig;
 
@@ -163,11 +161,11 @@ use CodeIgniter\Config\BaseConfig;
 
 class Vite extends BaseConfig
 {
-    public $paths = [
+    public $entryPoints = [
         '' => 'app/Views/assets/js/main.js',
         'admin' => 'app/Views/admin/assets/js/main.js',
     ];
 }
 ```
 
-Finally, for the admin page, in the view we write `vite_url('admin')`. That's it!
+Finally, for the admin page, in the view we write `vite_url('admin')`.
