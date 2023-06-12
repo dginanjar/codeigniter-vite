@@ -169,3 +169,7 @@ class Vite extends BaseConfig
 ```
 
 Finally, for the admin page, in the view we write `vite_url('admin')`.
+
+## Showcase
+
+An example of using this package can be seen at [this repository](https://github.com/dginanjar/codeigniter-vite-showcase).
